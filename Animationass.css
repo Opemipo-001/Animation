@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow: hidden;
+}
+section{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background-image: url(./rf11_ihrx_220505.jpg);
+    background-size: cover;
+}
+ .car{
+    position: relative;
+    top: 165px;
+    left: 1200px;
+    animation-name: drive;
+    animation-timing-function: ease-in-out;
+    animation-duration: 10s;
+    animation-iteration-count: infinite; 
+} 
+@keyframes drive {
+    0%, 100%{
+        transform: translate(1200px, 0px);
+    } 
+    50%{
+        transform: translate(-2700px,0px);
+    }
+    100%{
+        transform: translate(1200px, 1500px);
+    }
+}
+.car2{
+    position: relative;
+    top: 220px;
+    left: -200px;
+    animation-name: move;
+    animation-timing-function: ease-in-out;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+} 
+@keyframes move {
+    0%,100%{
+        transform: translate(-1200px, 0px);
+    }
+    50%{
+        transform: translate(2000px, 0px);
+    }
+    100%{
+        transform: translate(1200px, 1500px);
+    }
+}
+.car3{
+    position: relative;
+    top: 160px;
+    left: 1200px;
+    animation-name: drive;
+    animation-timing-function: ease-in-out;
+    animation-duration: 12s;
+    animation-iteration-count: infinite; 
+}
+.car4{
+    position: relative;
+    top: 170px;
+    left: 1200px;
+    animation-name: drive;
+    animation-timing-function: ease-in-out;
+    animation-duration: 15s;
+    animation-iteration-count: infinite; 
+} 
+.car5{
+    position: relative;
+    top: 220px;
+    left: -200px;
+    animation-name: move;
+    animation-timing-function: ease-in-out;
+    animation-duration: 18s;
+    animation-iteration-count: infinite;
+}
